@@ -11,7 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <title>WebStudio</title>
   </head>
@@ -63,10 +66,90 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-iconclose" data-modal-close>
-            <svg width="8px" height="8px" class="iconclose"><use href="./images/icons.svg#icon-close"></use></svg></button>
+            <svg width="8px" height="8px" class="iconclose">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <h3 class="modal-feedback">
+            Leave your contacts and we will call you back
+          </h3>
+
+          <form class="form feedback" autocomplete="on" novalidate>
+
+            <ul class="form">
+
+              <li class="form-field">
+                <label for="user-name" class="text-label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="user-name"
+                  class="input-field"
+                />
+                <span class="icon-input"><svg width="18px" height="18px"><use href="./images/icons.svg#icon-person"></use></svg></span>
+              </li>
+
+              <li class="form-field">
+                <label for="user-phone" class="text-label">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="user-phone"
+                  class="input-field"
+                />
+                <span class="icon-input"><svg width="18px" height="18px"><use href="./images/icons.svg#icon-phone"></use></svg></span>
+              </li>
+              </li>
+
+              <li class="form-field">
+                <label for="user-email" class="text-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="user-email"
+                  class="input-field"
+                />
+                <span class="icon-input"><svg width="20px" height="18px"><use href="./images/icons.svg#icon-email"></use></svg></span>
+              </li>
+              </li>
+
+              <li class="form-field">
+                <label class="text-label"> Comment </label>
+                <textarea
+                  name="comment"
+                  placeholder="Text input"
+                  class="comment"
+                  rows="7"
+                ></textarea>
+              </li>
+
+              <li class="form-field check">
+
+                <label for="checkbox"
+                class="check-lable">I accept the terms
+                and conditions of the<a href=""> Privacy Policy</a></label>
+
+                 
+                      
+                    <input type="checkbox" class="checkbox" id="checkbox" />
+
+                    <span class="check-icon">
+
+                      <svg class="vector" width="10px" height="8px">
+  
+                        <use href="./images/icons.svg#icon-vector"> </use> </svg></span>
+                    
+                    
+
+                
+              </li>
+            </ul>
+
+            <button type="submit" class="modal-button submit">Send</button>
+          </form>
         </div>
       </div>
-
 
       <section class="item-principle section">
         <div class="container">
@@ -345,7 +428,8 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+
+      <section class="customers container">
         <div class="container">
           <h2 class="clients">Customers</h2>
           <ul class="clients-list">
@@ -449,8 +533,34 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer container">
+          <form for="subscribe" autocomplete="on" novalidate>
+            <ul class="subscribe">
+              <li>
+                <label class="footer-form" for="user-email"> Subscribe 
+                <input
+                  type="email"
+                  name="email"
+                  id="user-email"
+                  class="input"
+                  placeholder="E-mail"
+                /></label>
+              </li>
+              <li>
+                <button type="submit" class="button-send">
+                  Subscribe
+                  <svg width="24px" height="24px" class="icon-send">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
